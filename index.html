@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar start--- -->
+     <div id="all">
+<div class="container">
+    <div class="nav-bar">
+        <h1>fitness</h1>
+        <div class="inner-content">
+            <div><a href="">home</a></div>
+            <div><a href="">programe</a></div>
+            <div><a href="">choose us</a></div>
+            <div><a href="">pricing</a></div>
+            <div><a href="">ragistar now</a></div>
+            <div id="demo" style="cursor: pointer;">change-mode</div>
+        </div>
+
+    </div>
+
+</div>
+ <!-- navbar end--- -->
+
+
+
+ <div class="container-two">
+    <div class="content-left">
+<p>Embrance,</p>
+<p>change,bgain</p>
+<p>your fitness</p>
+<p>journy</p>
+<button type="button" class="btn-started">get started<i class="fa-solid fa-arrow-right"></i></button>
+ </div>
+
+
+ <div class="container-right">
+
+    <img src="/little-project/imags/OIP-removebg.png" alt="">
+    <p class="img-text">no pain no Gain</p>
+</div>
+ </div>
+
+<div class="container-three">
+<div class="container-one">
+<i class="fa-solid fa-fire-burner " style="display: flex; align-items: center; justify-content: center; font-size: 30px; color: #FF0000;"></i>
+<div class="container-one-text">
+    <p class="p-text-one">fat loose</p>
+    <p class="p-text">unlock your fat improove yourself your confident </p>
+    <p class="p-text-bottum">exersice and blance diet</p>
+</div>
+</div>
+<div class="container-one">
+    <i class="fa-solid fa-bolt " style="display: flex; align-items: center; justify-content: center; font-size: 30px; color: #ffd900;"></i>
+    <div class="container-one-text">
+        <p class="p-text-one">fat loose</p>
+        <p class="p-text">unlock your fat improove yourself your confident </p>
+        <p class="p-text-bottum">exersice and blance diet</p>
+    </div>
+     
+        </div>
+        <div class="container-one">
+            <i class="fa-solid fa-dumbbell " style="display: flex; align-items: center; justify-content: center; font-size: 30px; color: darkblue;"></i>
+            <div class="container-one-text">
+                <p class="p-text-one">fat loose</p>
+                <p class="p-text">unlock your fat improove yourself your confident </p>
+                <p class="p-text-bottum">exersice and blance diet</p>
+            </div>
+             
+                </div>
+
+</div>
+ 
+
+
+
+
+ 
+</div>
+</body>
+
+
+
+
+<script src="https://kit.fontawesome.com/2b09b329d9.js" crossorigin="anonymous"></script>
+<script>
+
+   let demo= document.querySelector("#demo")
+   let changeBg=document.querySelector("#all")
+
+  let color="normal"
+  demo.addEventListener("click",function(){
+    if(color=="normal"){
+        changeBg.style.backgroundColor="rgb(41, 195, 41)"
+        demo.innerHTML="green-mode"
+        color="dark"
+    }
+    else if(color=="dark"){
+        changeBg.style.backgroundColor="black"
+        demo.innerHTML="black-mode"
+        color="red"
+    }
+
+    else if(color=="red"){
+        changeBg.style.backgroundColor="red"
+        demo.innerHTML="red-mode"
+        color="white"
+    }
+
+    else if(color=="white"){
+         changeBg.style.backgroundColor="green"
+          demo.innerHTML="green-mode"
+         color="yellow"
+
+    }
+
+    else{
+        changeBg.style.backgroundColor="rgb(8,43,45)"
+        demo.innerHTML="change-mode"
+        color="normal"
+    }
+
+    
+    
+  })
+</script>
+</html>
